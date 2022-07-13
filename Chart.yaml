@@ -1,0 +1,8 @@
+apiVersion: v2
+name: mynginx
+description: BASIC NGINX Helm chart for K8s-Testing in minikube
+type: application
+version: 0.4.0
+appVersion: "4.0.0"
+# Read templates/Notes.txt file before Deploying this Package and add the COntents accordingly in /etc/hosts
+# Also enable ingress in minikube using "minikube addons enable ingress" command.

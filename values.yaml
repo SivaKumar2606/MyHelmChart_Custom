@@ -1,0 +1,28 @@
+
+replicaCount: 2
+
+image:
+  repository: nginx
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"   # assign latest or any, if not interested to give Chart AppVersion here.
+
+service:
+  type: ClusterIP
+  port: 80
+
+#subdomain1: azure
+#subdomain2: devops
+
+address1: azure.cloudopsmeta.com
+address2: devops.cloudopsmeta.com
+
+# Change Addresses and subdomains as per your requirement
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 10
+  CpuPercentage: 60
+  # targetMemoryUtilizationPercentage: 80
+

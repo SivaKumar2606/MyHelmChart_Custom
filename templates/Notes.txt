@@ -1,0 +1,8 @@
+# This Helm Package deploys 2 deployment components for 2 subdomains following ingress.
+# You Change the Default Subdomains 1 and 2 as per your requirements
+
+# Under /etc/hosts file, include the following inputs:
+# workerNodeIPAddress	address1
+# workerNodeIPAddress	address2
+
+
